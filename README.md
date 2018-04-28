@@ -1,6 +1,7 @@
 Yukko
 =====
 
+## A Asciipunk client for nntpchan
 
 Yukko is an ASCIIpunk NNTPchan client written in Python 3. Place a list 
 of nodes seperated by new lines in nodeList.txt and the client will cycle 
@@ -9,25 +10,21 @@ project, it has been intentionally written in such a way that it does not
 depend on anything in the rest of the program, this allows it 
 to be pulled out and used for other projects. To start it run `./yukko.py`  
 
-Dependancies  
-==  
+### Dependancies
+
  - Python 3  
  - requests  
  - pypng  
 
-Screenies  
-==  
-![Board overview](https://i.sli.mg/1z0JdC.png)  
-![CAPTCHA](https://i.sli.mg/qEzWgR.png)
-![Post](https://i.sli.mg/fxw7hX.png)
-![Board list](https://i.sli.mg/LUS71H.png)  
-![Attachments](https://i.sli.mg/FOzIo1.png)  
-  
-Controls
-==  
+### Screenies  
 
-Board overview  
-=  
+| ![Board overview](https://i.sli.mg/1z0JdC.png) | ![CAPTCHA](https://i.sli.mg/qEzWgR.png) | ![Post](https://i.sli.mg/fxw7hX.png) | ![Board list](https://i.sli.mg/LUS71H.png) | ![Attachments](https://i.sli.mg/FOzIo1.png) |
+  
+## Controls
+  
+
+##### Board overview  
+  
  - Left/Right: Change page  
  - Up/Down: Scroll  
  - Enter: Open thread  
@@ -36,58 +33,58 @@ Board overview
  - B: Board list  
  - R: Refresh  
 
-Thread
-=  
+##### Thread
+  
  - Backspace/Left/Escape: Back to board overview.  
  - Up/Down: Scroll
  - Enter: View attachments (does nothing if there are none)  
  - P: New reply  
  - R: Refresh    
   
-Attachments  
-=  
+##### Attachments  
+  
  - Up/Down: Scroll
  - Enter: Download attachment
  - Backspace/Left/Escape: Back to thread  
   
-Settings  
-==  
+## Settings  
+  
 General settings are stored in settings.json  
   
-download directory  
-=  
+##### download directory  
+  
 The directory to download attachments to.  
   
-text editor
-=  
+##### text editor
+  
 The command used to open a text editor.  
 
-theme folder  
-=  
+##### theme folder  
+  
 The directory holding the current theme.  
 
-max overview lines  
-=  
+##### max overview lines  
+  
 The maximum amount of lines to show in board overview mode before contracting the post.
 
-max overview posts  
-=  
+##### max overview posts  
+  
 The maxmimum amount of posts, starting from the end of the thread (not including the opening post) to show in board view mode.
   
-default board  
-=  
+##### default board  
+  
 The default board that Yukko will go to when started.  
 
-http proxy/https proxy  
-=  
+##### http proxy/https proxy  
+  
 Sets a proxy for all traffic, such as "socks5://127.0.0.1:9050". Note that SOCKS proxies will require the socks add-on for the requests module, which can be 
 installed like so:  
 ```
 sudo pip install -U "requests[socks]"
 ```  
   
-Themes
-==
+## Themes
+
 Themes can be used to style Yukko to look however you like, from changing the ascii art to the borders around the posts.  
 They contain 5 files:  
  - attachmentsBg.txt: The background to display on the attachments page.  
